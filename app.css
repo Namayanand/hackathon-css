@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    }
+    .container2{
+    width: 100%;
+    height: 50vh;
+    padding: 0 8%;
+    }
+    .container h1{
+        text-align: center;
+padding-top: 10%;
+margin-bottom: 60px;
+font-weight: 600;
+position: relative;
+    }
+    .container h1::after{
+        content: '';
+        padding-top: -100%;
+        background: #f15c05;
+        width: 100px;
+        height: 5px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        }
+        .row{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 30px;
+        }
+        .service{
+            text-align: center;
+            padding: 25px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            background: transparent;
+            transition: transform 0.5s, background 0.5s;
+            }
+        .service i{
+                font-size: 40px;
+                margin-bottom: 10px;
+                color: #f55e07;
+            }
+            .service h2{
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+            .service:hover{
+                background: #fa6603;
+                color: #fff;
+                transform: scale(1.05);
+            }
+            .service:hover i{
+                color: #fff
+            }
+            .container h1{
+                text-align: center;
+        padding-top: 2%;
+        margin-bottom: 60px;
+        font-weight: 600;
+        position: relative;
+            }
+            .banner {
+              
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: #252424;
+                color: #ffffff;
+                height: 300px;
+                text-align: center;
+              }
+              
+              .banner-title {
+                font-size: 56px;
+                margin-bottom: 20px;
+                font-family: 'Chakra Petch', sans-serif;
+              }
+              
+              .banner-text {
+              
+                font-size: 18px;
+                margin-bottom: 40px;
+              }
+              
+              .banner-button {
+                background-color: #fd7e14;
+                color: #ffffff;
+                padding: 10px 20px;
+                border-radius: 20px;
+                text-decoration: none;
+                font-size: 18px;
+                font-family: 'Kanit', sans-serif;
+                cursor: pointer;
+              }
+              
+              * {
+                box-sizing: border-box;
+              }
+              
+              body {
+                margin: 0px;
+                font-family: 'segoe ui';
+              }
+              
+              .nav {
+                height: 50px;
+                width: 100%;
+                background-color: #fd7e14;
+                position: relative;
+              }
+              
+              .nav > .nav-header {
+                display: inline;
+              }
+              
+              .nav > .nav-header > .nav-title {
+                display: inline-block;
+                font-size: 22px;
+                color: #fff;
+                padding: 10px 10px 10px 10px;
+              }
+              
+              .nav > .nav-btn {
+                display: none;
+              }
+              
+              .nav > .nav-links {
+                display: inline;
+                float: right;
+                font-size: 18px;
+              }
+              
+              .nav > .nav-links > a {
+                display: inline-block;
+                padding: 13px 10px 13px 10px;
+                text-decoration: none;
+                color: #efefef;
+              }
+              
+              .nav > .nav-links > a:hover {
+                background-color: rgba(0, 0, 0, 0.3);
+              }
+              
+              .nav > #nav-check {
+                display: none;
+              }
+
+              #morning {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-image: url("food.jpg");
+                color: #0e0d0d;
+                height: 300px;
+                font-weight: 300;
+                text-align: center;
+              }
+              
+              #morning .banner-title {
+                font-size: 56px;
+                margin-bottom: 20px;
+                font-family: 'Chakra Petch', sans-serif;
+              }
+              
+              #morning .banner-text {
+              
+                font-size: 18px;
+                margin-bottom: 40px;
+              }
+              
+              #morning .banner-button {
+                background-color: #fd7e14;
+                color: #000000;
+                padding: 10px 20px;
+                border-radius: 20px;
+                text-decoration: none;
+                font-size: 50px;
+                font-family: 'Kanit', sans-serif;
+                cursor: pointer;
+              }
+              
+
+
+
+
+              
+              @media (max-width:600px) {
+                .nav > .nav-btn {
+                  display: inline-block;
+                  position: absolute;
+                  right: 0px;
+                  top: 0px;
+                }
+                .nav > .nav-btn > label {
+                  display: inline-block;
+                  width: 50px;
+                  height: 50px;
+                  padding: 13px;
+                }
+                .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+                  background-color: rgba(245, 13, 13, 0.3);
+                }
+                .nav > .nav-btn > label > span {
+                  display: block;
+                  width: 25px;
+                  height: 10px;
+                  border-top: 2px solid #eee;
+                }
+                .nav > .nav-links {
+                  position: absolute;
+                  display: block;
+                  width: 100%;
+                  background-color: #fd7e14;
+                  height: 0px;
+                  transition: all 0.3s ease-in;
+                  overflow-y: hidden;
+                  top: 50px;
+                  left: 0px;
+                }
+                .nav > .nav-links > a {
+                  display: block;
+                  width: 100%;
+                }
+                .nav > #nav-check:not(:checked) ~ .nav-links {
+                  height: 0px;
+                }
+                .nav > #nav-check:checked ~ .nav-links {
+                  height: calc(100vh - 50px);
+                  overflow-y: auto;
+                }
+                body {
+                  background-color: #98DFEA;
+                  margin: 0 auto;
+                  text-align: center;
+                  padding: 50px;
+                }
+              }
+            
+                
+                
+          
